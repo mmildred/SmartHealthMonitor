@@ -58,4 +58,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("androidx.compose.material:material-icons-extended:1.7.5")
     implementation("androidx.compose.material3:material3:1.3.1")
+    // Wearable Data Layer API
+    implementation("com.google.android.gms:play-services-wearable:18.2.0")
+    // Coroutines para await()
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
 }

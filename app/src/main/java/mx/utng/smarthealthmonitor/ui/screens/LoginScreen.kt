@@ -1,5 +1,6 @@
-package mx.utng.smarthealthmonitor
+package mx.utng.smarthealthmonitor.ui.screens
 
+import android.content.res.Configuration
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
@@ -125,7 +126,7 @@ fun LoginScreen(onLoginSuccess: () -> Unit = {}) {
 }
 
 @Preview(name = "Login - Light", showBackground = true)
-@Preview(name = "Login - Dark", showBackground = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)
+@Preview(name = "Login - Dark", showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 private fun LoginScreenPreview() {
     SmartHealthMonitorTheme {

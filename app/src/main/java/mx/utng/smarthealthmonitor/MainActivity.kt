@@ -4,9 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Surface
-import androidx.compose.ui.Modifier
+import androidx.compose.runtime.*
+import mx.utng.smarthealthmonitor.ui.screens.DashboardScreen
+import mx.utng.smarthealthmonitor.ui.screens.LoginScreen
 import mx.utng.smarthealthmonitor.ui.theme.SmartHealthMonitorTheme
 
 class MainActivity : ComponentActivity() {
@@ -15,14 +15,26 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SmartHealthMonitorTheme {
-                Surface(modifier = Modifier.fillMaxSize()) {
-                    LoginScreen(
-                        onLoginSuccess = {
-                            println("Login exitoso")
-                        }
-                    )
-                }
+                SmartHealthApp()
             }
         }
+    }
+}
+
+@Composable
+fun SmartHealthApp() {
+    var isLoggedIn by remember { mutableStateOf(false) }
+
+    if (isLoggedIn) {
+        DashboardScreen(
+            onHistoricalClick = { /* Navegar a historial */ },
+            onAlertClick = { /* Mostrar alertas */ }
+        )
+    } else {
+        LoginScreen(
+            onLoginSuccess = {
+                isLoggedIn = true
+            }
+        )
     }
 }
