@@ -6,11 +6,13 @@ import androidx.health.services.client.PassiveListenerService
 import androidx.health.services.client.data.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.guava.await
+import mx.utng.smarthealthmonitor.wear.data.WearNeonRepository
 
 class HealthDataService : PassiveListenerService() {
 
     private val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
     private lateinit var wearDataSender: WearDataSender
+    private val neonRepo = WearNeonRepository()
 
     override fun onCreate() {
         super.onCreate()
@@ -22,7 +24,15 @@ class HealthDataService : PassiveListenerService() {
         fcDataPoints.forEach { dataPoint ->
             if (dataPoint is SampleDataPoint<Double>) {
                 val bpm = dataPoint.value.toInt()
-                scope.launch { wearDataSender.enviarFC(bpm) }
+                val estado = if (bpm in 60..100) "Normal" else "Irregular"
+                
+                scope.launch { 
+                    // 1. Enviar al teléfono vía BLE
+                    wearDataSender.enviarFC(bpm)
+                    
+                    // 2. Publicar directamente en Neon
+                    neonRepo.publicarLectura(bpm, estado)
+                }
             }
         }
     }

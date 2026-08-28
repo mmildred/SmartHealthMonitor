@@ -34,9 +34,9 @@ public final class SmartHealthDB_Impl extends SmartHealthDB {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
-        db.execSQL("CREATE TABLE IF NOT EXISTS `lecturas_fc` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `valorBpm` INTEGER NOT NULL, `timestamp` INTEGER NOT NULL, `hora` TEXT NOT NULL, `esNormal` INTEGER NOT NULL)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `lecturas_fc` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `bpm` INTEGER NOT NULL, `estado` TEXT NOT NULL, `dispositivo` TEXT NOT NULL, `timestamp` INTEGER NOT NULL, `hora` TEXT NOT NULL, `sincronizado` INTEGER NOT NULL)");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '769981bf94b6b2101c19808596c249c2')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'cea2262736108c442c1764b67261ea98')");
       }
 
       @Override
@@ -85,12 +85,14 @@ public final class SmartHealthDB_Impl extends SmartHealthDB {
       @NonNull
       public RoomOpenHelper.ValidationResult onValidateSchema(
           @NonNull final SupportSQLiteDatabase db) {
-        final HashMap<String, TableInfo.Column> _columnsLecturasFc = new HashMap<String, TableInfo.Column>(5);
+        final HashMap<String, TableInfo.Column> _columnsLecturasFc = new HashMap<String, TableInfo.Column>(7);
         _columnsLecturasFc.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsLecturasFc.put("valorBpm", new TableInfo.Column("valorBpm", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsLecturasFc.put("bpm", new TableInfo.Column("bpm", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsLecturasFc.put("estado", new TableInfo.Column("estado", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsLecturasFc.put("dispositivo", new TableInfo.Column("dispositivo", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsLecturasFc.put("timestamp", new TableInfo.Column("timestamp", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsLecturasFc.put("hora", new TableInfo.Column("hora", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsLecturasFc.put("esNormal", new TableInfo.Column("esNormal", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsLecturasFc.put("sincronizado", new TableInfo.Column("sincronizado", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysLecturasFc = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesLecturasFc = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoLecturasFc = new TableInfo("lecturas_fc", _columnsLecturasFc, _foreignKeysLecturasFc, _indicesLecturasFc);
@@ -102,7 +104,7 @@ public final class SmartHealthDB_Impl extends SmartHealthDB {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "769981bf94b6b2101c19808596c249c2", "8a25280a8a8fdda8ad70f11733c41889");
+    }, "cea2262736108c442c1764b67261ea98", "b277af572886f8e1850a832b7a73d193");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;

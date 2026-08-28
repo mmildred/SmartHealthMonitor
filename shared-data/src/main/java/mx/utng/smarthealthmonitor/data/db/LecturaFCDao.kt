@@ -1,27 +1,43 @@
 package mx.utng.smarthealthmonitor.data.db
 
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
+/**
+ * DAO para gestionar las operaciones de la base de datos local de lecturas de FC.
+ * Incluye métodos optimizados para el motor de sincronización offline-first.
+ */
 @Dao
 interface LecturaFCDao {
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertar(lectura: LecturaFC)
+    @Query("SELECT * FROM lecturas_fc ORDER BY id DESC")
+    fun obtenerTodas(): Flow<List<LecturaFC>>
 
-    // Flow: actualización reactiva cuando hay nuevos datos
-    @Query("""
-        SELECT * FROM lecturas_fc 
-        ORDER BY timestamp DESC 
-        LIMIT 50""") // últimas 50 lecturas
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertar(lectura: LecturaFC): Long
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun upsert(lectura: LecturaFC)
+
+    @Query("SELECT * FROM lecturas_fc WHERE sincronizado = 0")
+    suspend fun obtenerNoSincronizados(): List<LecturaFC>
+
+    @Query("UPDATE lecturas_fc SET sincronizado = 1 WHERE id = :id")
+    suspend fun marcarSincronizado(id: Long)
+
+    @Query("SELECT COUNT(*) FROM lecturas_fc WHERE sincronizado = 0")
+    fun contarPendientes(): Flow<Int>
+
+    // Métodos adicionales para gestión de datos
+    @Query("SELECT * FROM lecturas_fc ORDER BY timestamp DESC LIMIT 50")
     fun obtenerUltimas(): Flow<List<LecturaFC>>
 
     @Query("SELECT COUNT(*) FROM lecturas_fc")
     suspend fun contarRegistros(): Int
 
-    // Limpiar lecturas más antiguas de 7 días
-    @Query("""
-        DELETE FROM lecturas_fc 
-        WHERE timestamp < :limite""")
+    @Query("DELETE FROM lecturas_fc WHERE timestamp < :limite")
     suspend fun limpiarViejos(limite: Long)
 }
