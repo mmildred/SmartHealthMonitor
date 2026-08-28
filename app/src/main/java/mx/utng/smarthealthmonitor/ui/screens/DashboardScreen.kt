@@ -8,6 +8,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.viewinterop.AndroidView
+import androidx.mediarouter.app.MediaRouteButton
+import com.google.android.gms.cast.framework.CastButtonFactory
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.launch
 import mx.utng.smarthealthmonitor.ui.viewmodel.DashboardViewModel
@@ -41,7 +44,19 @@ fun DashboardScreen(
 
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("Dashboard") })
+            TopAppBar(
+                title = { Text("Dashboard") },
+                actions = {
+                    AndroidView(
+                        factory = { context ->
+                            MediaRouteButton(context).apply {
+                                CastButtonFactory.setUpMediaRouteButton(context, this)
+                            }
+                        },
+                        modifier = Modifier.size(48.dp)
+                    )
+                }
+            )
         },
         snackbarHost = { SnackbarHost(hostState = snackbarHost) },
         floatingActionButton = {
