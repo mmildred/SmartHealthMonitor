@@ -1,0 +1,479 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:2:1-34:12
+MERGED from [:shared-data] /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.tv:tv-foundation:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/df12645fafe023f84e8d91668b3b1b28/transformed/tv-foundation-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.tv:tv-material:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5aced91ca54760627aec58a891c1919c/transformed/tv-material-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/738ec6e3546514661806666e2b66f0a5/transformed/navigation-common-2.8.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/fcf7842529f23d26ca299088b8784f1a/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/24ea4560336cdb918de35c1ea84816f9/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ab34414dcfb560ed6ea82fc8ed3d0966/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/c5ea7dc9d538a7c987bd797b27239fc1/transformed/navigation-compose-2.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/594cb5a408cca34dbeb7f150ba6472e4/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/156fd26d48c11c85fb207376d635c580/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d884ba0cb2611d62bdf43f6e04854b3b/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.6.8] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/be1e7e96af2ed896fc6ae0da8bfbce20/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2cb193f681a1aa2715ce2c52997d24e5/transformed/animation-core/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d47da2593283c758d3e21b6ae5a416d1/transformed/ui-tooling-data/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b845f9ea82672463ad91d5bf83a6a1bc/transformed/ui-unit/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/df4e1b11bf1c6584afcee39de3fc48da/transformed/ui-geometry/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/07125e2da44903aba7ac47e6867da8f6/transformed/ui-tooling-preview/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ffb9ea7b30b5429ba5a54b13a8ce0136/transformed/ui-graphics/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/27adb3a3af20614ae6ea4c3cfbfbb8d7/transformed/ui-util/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/285149fc20765b21f14463463e5e59a3/transformed/ui-text/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.animation:animation-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/6640f14e795477ffd22d42e6cf8a15ef/transformed/animation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/c3121a2239cd33549a1f76d555829bea/transformed/foundation-layout/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/caa0652c4a900cdbe17c23ef41b44ffd/transformed/foundation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/a247ac1b835236312948f21545ecfd2a/transformed/runtime-annotation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-retain-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cdf17a6b0e71742c23c5f63a609721ec/transformed/runtime-retain/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.10.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/aa818c57e0a7f170195af4ddabc9c436/transformed/activity-1.10.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.media3:media3-ui:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5c04a250c76e2dfd9f0f7c7a746a772e/transformed/media3-ui-1.5.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-extractor:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/61e8d8d8ec12465c81a771056e384ee9/transformed/media3-extractor-1.5.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-container:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f799750be3e34f1204bc1b1cc5994ff7/transformed/media3-container-1.5.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-datasource:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3dca0535c0c60eeb065bf9b6d12e306e/transformed/media3-datasource-1.5.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-decoder:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/6e2aef75beeaa7a71e0801ea4b678f5e/transformed/media3-decoder-1.5.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-database:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/71a169f7ab66143585ab0aa876f1b190/transformed/media3-database-1.5.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-common:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/0444e5d8ac60399b599d65c09a6447e7/transformed/media3-common-1.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media3:media3-exoplayer:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bdbac6d42f337a23b5f70a097ecf72b2/transformed/media3-exoplayer-1.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.7.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/521a86ec5b4b472d5c4b2740d3ff4c65/transformed/media-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/918c8abd09628dfd771082650275bd11/transformed/recyclerview-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/63662735c78b4d49353ed225790f87cf/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1260d8f051d2667fdf5171b43c90fd2c/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.6.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/df286fda1fc3a83f22831f35fca7bd3f/transformed/transition-1.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window-core-android:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/93bfc087f9c27b5697d339e58b7239a8/transformed/window-core/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/7ff25b6d4a85ef83d76f7e3f71a82c92/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/aa7503df9c373ea19f700489c40f8c4c/transformed/core-ktx-1.16.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f2bee457a01b17885bbcc89f6092be43/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/82cf9c2a7a0ac8809ec18cf22b7ee178/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bebd53c823cc799603ebd5289a420cd8/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/98c53afa3b068b58db7262ecc1fbb710/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5147e4379142027e049b7f30154ad6a4/transformed/lifecycle-livedata-core-ktx-2.9.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/091affd2ff21ce468e9f81c3139690b3/transformed/lifecycle-livedata-core-2.9.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2cb73d679fa7f2f1affe5f9e53a686c5/transformed/lifecycle-viewmodel-2.9.4/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b90a08ffbf746442c9cd4a8e1a55865f/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5d4668cc4726c6eac5fb78a934d3a742/transformed/lifecycle-livedata-2.9.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/7be5272ad179ce5bd8f2c1784cd92562/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2e238d99751eaffbfe95357cb7d2336e/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/382e3bf45d1c3dbd5ffa35121479861c/transformed/lifecycle-viewmodel-ktx-2.9.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2a2d5c4691f1783ea636193141b75ea4/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-android:1.3.2] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/96fa88795f6f746f5fa07f6799e47b2b/transformed/savedstate-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.2] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2532bc5172e850a90a6505eabd80f2b1/transformed/savedstate-ktx-1.3.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-compose-android:1.3.2] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/0f1367fa9a149f674d5ae9707cbb3661/transformed/savedstate-compose/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d6f6bca0a7509b7e85ea8015da8c8a11/transformed/runtime/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/a98aa3a69e8f204f7370afe391378346/transformed/runtime-saveable/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8429e4f534092b8d6e902487bd3d0216/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8a07649f012b6da14538468f0d1040c0/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/69b910118400b0c6b74c7ccd0b217e7e/transformed/ui/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.10.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/19a42787d9fd974f902b059d1f2e44ab/transformed/activity-ktx-1.10.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.10.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/9c5e99c3a5c1f654f8675d1540d7b871/transformed/activity-compose-1.10.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d70790dc4f0bcd400b2753db6c56a3ee/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/201a23571a0225314f40c8964ddab10a/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/89d1e9be2137c2b2d2d9490c1f3b8cce/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bc7b6c3bf1ab7d2dfb2ec61e2d370198/transformed/exifinterface-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/69e7cd261187500aa6b8b98b7602ba8d/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1ed8fb1c535030262b21ef54c3a9ecc6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ac101fd28bf0f4945d010bef5b4de904/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/849c49d265ca53bcaa251a652a1b8ddd/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/7c57e7d7b058433dbc65ebd48fe00e42/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/282a948d33913bfac919fb386f45109a/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/53c2d2f59bf0f326119e1032d2b603c8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f08796e7f7c59c01a0928b96c5144cad/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/508bc528fe652e418db7c421a6d611d6/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f1740d6d6e9454f7ab6f4e66de3e7f44/transformed/core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
+	package
+		INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.touchscreen
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:5:5-7:36
+	android:required
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:7:9-33
+	android:name
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:6:9-52
+uses-feature#android.software.leanback
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:8:5-10:36
+	android:required
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:10:9-33
+	android:name
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:9:9-49
+application
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:12:5-33:19
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:12:5-33:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1ed8fb1c535030262b21ef54c3a9ecc6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1ed8fb1c535030262b21ef54c3a9ecc6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ac101fd28bf0f4945d010bef5b4de904/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ac101fd28bf0f4945d010bef5b4de904/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:15:9-41
+	android:icon
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:17:9-66
+activity#mx.utng.smarthealthmonitor.tv.TVActivity
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:19:9-32:20
+	android:screenOrientation
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:24:13-50
+	android:exported
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:22:13-36
+	android:banner
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:21:13-49
+	android:theme
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:25:13-70
+	android:logo
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:23:13-47
+	android:name
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:20:13-39
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.LEANBACK_LAUNCHER
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:29:27-74
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:30:17-86
+	android:name
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:30:27-83
+uses-sdk
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml
+MERGED from [:shared-data] /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:shared-data] /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [androidx.tv:tv-foundation:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/df12645fafe023f84e8d91668b3b1b28/transformed/tv-foundation-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.tv:tv-foundation:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/df12645fafe023f84e8d91668b3b1b28/transformed/tv-foundation-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.tv:tv-material:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5aced91ca54760627aec58a891c1919c/transformed/tv-material-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.tv:tv-material:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5aced91ca54760627aec58a891c1919c/transformed/tv-material-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/738ec6e3546514661806666e2b66f0a5/transformed/navigation-common-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/738ec6e3546514661806666e2b66f0a5/transformed/navigation-common-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/fcf7842529f23d26ca299088b8784f1a/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/fcf7842529f23d26ca299088b8784f1a/transformed/navigation-runtime-2.8.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/24ea4560336cdb918de35c1ea84816f9/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/24ea4560336cdb918de35c1ea84816f9/transformed/navigation-common-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ab34414dcfb560ed6ea82fc8ed3d0966/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ab34414dcfb560ed6ea82fc8ed3d0966/transformed/navigation-runtime-ktx-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/c5ea7dc9d538a7c987bd797b27239fc1/transformed/navigation-compose-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.8.5] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/c5ea7dc9d538a7c987bd797b27239fc1/transformed/navigation-compose-2.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/594cb5a408cca34dbeb7f150ba6472e4/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/594cb5a408cca34dbeb7f150ba6472e4/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/156fd26d48c11c85fb207376d635c580/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.8] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/156fd26d48c11c85fb207376d635c580/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d884ba0cb2611d62bdf43f6e04854b3b/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.8] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d884ba0cb2611d62bdf43f6e04854b3b/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.8] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/be1e7e96af2ed896fc6ae0da8bfbce20/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.8] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/be1e7e96af2ed896fc6ae0da8bfbce20/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2cb193f681a1aa2715ce2c52997d24e5/transformed/animation-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2cb193f681a1aa2715ce2c52997d24e5/transformed/animation-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d47da2593283c758d3e21b6ae5a416d1/transformed/ui-tooling-data/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d47da2593283c758d3e21b6ae5a416d1/transformed/ui-tooling-data/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b845f9ea82672463ad91d5bf83a6a1bc/transformed/ui-unit/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b845f9ea82672463ad91d5bf83a6a1bc/transformed/ui-unit/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/df4e1b11bf1c6584afcee39de3fc48da/transformed/ui-geometry/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/df4e1b11bf1c6584afcee39de3fc48da/transformed/ui-geometry/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/07125e2da44903aba7ac47e6867da8f6/transformed/ui-tooling-preview/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/07125e2da44903aba7ac47e6867da8f6/transformed/ui-tooling-preview/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ffb9ea7b30b5429ba5a54b13a8ce0136/transformed/ui-graphics/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ffb9ea7b30b5429ba5a54b13a8ce0136/transformed/ui-graphics/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/27adb3a3af20614ae6ea4c3cfbfbb8d7/transformed/ui-util/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/27adb3a3af20614ae6ea4c3cfbfbb8d7/transformed/ui-util/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/285149fc20765b21f14463463e5e59a3/transformed/ui-text/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/285149fc20765b21f14463463e5e59a3/transformed/ui-text/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/6640f14e795477ffd22d42e6cf8a15ef/transformed/animation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/6640f14e795477ffd22d42e6cf8a15ef/transformed/animation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/c3121a2239cd33549a1f76d555829bea/transformed/foundation-layout/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/c3121a2239cd33549a1f76d555829bea/transformed/foundation-layout/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/caa0652c4a900cdbe17c23ef41b44ffd/transformed/foundation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/caa0652c4a900cdbe17c23ef41b44ffd/transformed/foundation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/a247ac1b835236312948f21545ecfd2a/transformed/runtime-annotation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/a247ac1b835236312948f21545ecfd2a/transformed/runtime-annotation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-retain-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cdf17a6b0e71742c23c5f63a609721ec/transformed/runtime-retain/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-retain-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cdf17a6b0e71742c23c5f63a609721ec/transformed/runtime-retain/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.10.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/aa818c57e0a7f170195af4ddabc9c436/transformed/activity-1.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.10.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/aa818c57e0a7f170195af4ddabc9c436/transformed/activity-1.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.media3:media3-ui:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5c04a250c76e2dfd9f0f7c7a746a772e/transformed/media3-ui-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-ui:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5c04a250c76e2dfd9f0f7c7a746a772e/transformed/media3-ui-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/61e8d8d8ec12465c81a771056e384ee9/transformed/media3-extractor-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/61e8d8d8ec12465c81a771056e384ee9/transformed/media3-extractor-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f799750be3e34f1204bc1b1cc5994ff7/transformed/media3-container-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f799750be3e34f1204bc1b1cc5994ff7/transformed/media3-container-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3dca0535c0c60eeb065bf9b6d12e306e/transformed/media3-datasource-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3dca0535c0c60eeb065bf9b6d12e306e/transformed/media3-datasource-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/6e2aef75beeaa7a71e0801ea4b678f5e/transformed/media3-decoder-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/6e2aef75beeaa7a71e0801ea4b678f5e/transformed/media3-decoder-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/71a169f7ab66143585ab0aa876f1b190/transformed/media3-database-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/71a169f7ab66143585ab0aa876f1b190/transformed/media3-database-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/0444e5d8ac60399b599d65c09a6447e7/transformed/media3-common-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/0444e5d8ac60399b599d65c09a6447e7/transformed/media3-common-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bdbac6d42f337a23b5f70a097ecf72b2/transformed/media3-exoplayer-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bdbac6d42f337a23b5f70a097ecf72b2/transformed/media3-exoplayer-1.5.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.7.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/521a86ec5b4b472d5c4b2740d3ff4c65/transformed/media-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.media:media:1.7.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/521a86ec5b4b472d5c4b2740d3ff4c65/transformed/media-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/918c8abd09628dfd771082650275bd11/transformed/recyclerview-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/918c8abd09628dfd771082650275bd11/transformed/recyclerview-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/63662735c78b4d49353ed225790f87cf/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/63662735c78b4d49353ed225790f87cf/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1260d8f051d2667fdf5171b43c90fd2c/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1260d8f051d2667fdf5171b43c90fd2c/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.6.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/df286fda1fc3a83f22831f35fca7bd3f/transformed/transition-1.6.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.6.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/df286fda1fc3a83f22831f35fca7bd3f/transformed/transition-1.6.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-core-android:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/93bfc087f9c27b5697d339e58b7239a8/transformed/window-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-core-android:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/93bfc087f9c27b5697d339e58b7239a8/transformed/window-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/7ff25b6d4a85ef83d76f7e3f71a82c92/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/7ff25b6d4a85ef83d76f7e3f71a82c92/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/aa7503df9c373ea19f700489c40f8c4c/transformed/core-ktx-1.16.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/aa7503df9c373ea19f700489c40f8c4c/transformed/core-ktx-1.16.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f2bee457a01b17885bbcc89f6092be43/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f2bee457a01b17885bbcc89f6092be43/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/82cf9c2a7a0ac8809ec18cf22b7ee178/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/82cf9c2a7a0ac8809ec18cf22b7ee178/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bebd53c823cc799603ebd5289a420cd8/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bebd53c823cc799603ebd5289a420cd8/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/98c53afa3b068b58db7262ecc1fbb710/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/98c53afa3b068b58db7262ecc1fbb710/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5147e4379142027e049b7f30154ad6a4/transformed/lifecycle-livedata-core-ktx-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5147e4379142027e049b7f30154ad6a4/transformed/lifecycle-livedata-core-ktx-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/091affd2ff21ce468e9f81c3139690b3/transformed/lifecycle-livedata-core-2.9.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/091affd2ff21ce468e9f81c3139690b3/transformed/lifecycle-livedata-core-2.9.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2cb73d679fa7f2f1affe5f9e53a686c5/transformed/lifecycle-viewmodel-2.9.4/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2cb73d679fa7f2f1affe5f9e53a686c5/transformed/lifecycle-viewmodel-2.9.4/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b90a08ffbf746442c9cd4a8e1a55865f/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b90a08ffbf746442c9cd4a8e1a55865f/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5d4668cc4726c6eac5fb78a934d3a742/transformed/lifecycle-livedata-2.9.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/5d4668cc4726c6eac5fb78a934d3a742/transformed/lifecycle-livedata-2.9.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/7be5272ad179ce5bd8f2c1784cd92562/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/7be5272ad179ce5bd8f2c1784cd92562/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2e238d99751eaffbfe95357cb7d2336e/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2e238d99751eaffbfe95357cb7d2336e/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/382e3bf45d1c3dbd5ffa35121479861c/transformed/lifecycle-viewmodel-ktx-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/382e3bf45d1c3dbd5ffa35121479861c/transformed/lifecycle-viewmodel-ktx-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2a2d5c4691f1783ea636193141b75ea4/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2a2d5c4691f1783ea636193141b75ea4/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.2] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/96fa88795f6f746f5fa07f6799e47b2b/transformed/savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.2] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/96fa88795f6f746f5fa07f6799e47b2b/transformed/savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.2] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2532bc5172e850a90a6505eabd80f2b1/transformed/savedstate-ktx-1.3.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.2] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/2532bc5172e850a90a6505eabd80f2b1/transformed/savedstate-ktx-1.3.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.3.2] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/0f1367fa9a149f674d5ae9707cbb3661/transformed/savedstate-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.3.2] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/0f1367fa9a149f674d5ae9707cbb3661/transformed/savedstate-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d6f6bca0a7509b7e85ea8015da8c8a11/transformed/runtime/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d6f6bca0a7509b7e85ea8015da8c8a11/transformed/runtime/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/a98aa3a69e8f204f7370afe391378346/transformed/runtime-saveable/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/a98aa3a69e8f204f7370afe391378346/transformed/runtime-saveable/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8429e4f534092b8d6e902487bd3d0216/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8429e4f534092b8d6e902487bd3d0216/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8a07649f012b6da14538468f0d1040c0/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8a07649f012b6da14538468f0d1040c0/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/69b910118400b0c6b74c7ccd0b217e7e/transformed/ui/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/69b910118400b0c6b74c7ccd0b217e7e/transformed/ui/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.10.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/19a42787d9fd974f902b059d1f2e44ab/transformed/activity-ktx-1.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.10.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/19a42787d9fd974f902b059d1f2e44ab/transformed/activity-ktx-1.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.10.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/9c5e99c3a5c1f654f8675d1540d7b871/transformed/activity-compose-1.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.10.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/9c5e99c3a5c1f654f8675d1540d7b871/transformed/activity-compose-1.10.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d70790dc4f0bcd400b2753db6c56a3ee/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/d70790dc4f0bcd400b2753db6c56a3ee/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/201a23571a0225314f40c8964ddab10a/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/201a23571a0225314f40c8964ddab10a/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/89d1e9be2137c2b2d2d9490c1f3b8cce/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/89d1e9be2137c2b2d2d9490c1f3b8cce/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bc7b6c3bf1ab7d2dfb2ec61e2d370198/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bc7b6c3bf1ab7d2dfb2ec61e2d370198/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/69e7cd261187500aa6b8b98b7602ba8d/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/69e7cd261187500aa6b8b98b7602ba8d/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1ed8fb1c535030262b21ef54c3a9ecc6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1ed8fb1c535030262b21ef54c3a9ecc6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ac101fd28bf0f4945d010bef5b4de904/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/ac101fd28bf0f4945d010bef5b4de904/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/849c49d265ca53bcaa251a652a1b8ddd/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/849c49d265ca53bcaa251a652a1b8ddd/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/7c57e7d7b058433dbc65ebd48fe00e42/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/7c57e7d7b058433dbc65ebd48fe00e42/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/282a948d33913bfac919fb386f45109a/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/282a948d33913bfac919fb386f45109a/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/53c2d2f59bf0f326119e1032d2b603c8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/53c2d2f59bf0f326119e1032d2b603c8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f08796e7f7c59c01a0928b96c5144cad/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f08796e7f7c59c01a0928b96c5144cad/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/508bc528fe652e418db7c421a6d611d6/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/508bc528fe652e418db7c421a6d611d6/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f1740d6d6e9454f7ab6f4e66de3e7f44/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f1740d6d6e9454f7ab6f4e66de3e7f44/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1ed8fb1c535030262b21ef54c3a9ecc6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/1ed8fb1c535030262b21ef54c3a9ecc6/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [androidx.media3:media3-common:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/0444e5d8ac60399b599d65c09a6447e7/transformed/media3-common-1.5.1/AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-exoplayer:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bdbac6d42f337a23b5f70a097ecf72b2/transformed/media3-exoplayer-1.5.1/AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-exoplayer:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/bdbac6d42f337a23b5f70a097ecf72b2/transformed/media3-exoplayer-1.5.1/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [androidx.media3:media3-common:1.5.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/0444e5d8ac60399b599d65c09a6447e7/transformed/media3-common-1.5.1/AndroidManifest.xml:22:22-76
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+permission#mx.utng.smarthealthmonitor.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+uses-permission#mx.utng.smarthealthmonitor.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:30:17-78
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:25-92

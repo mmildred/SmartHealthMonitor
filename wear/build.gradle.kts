@@ -39,6 +39,13 @@ android {
 }
 
 dependencies {
+    // Health Services API
+    implementation("androidx.health:health-services-client:1.1.0-alpha03")
+    // Coroutines await() para Guava ListenableFuture
+    implementation("com.google.guava:guava:33.0.0-android")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-guava:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
+
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.foundation)

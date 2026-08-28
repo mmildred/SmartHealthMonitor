@@ -13,6 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.*
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import mx.utng.smarthealthmonitor.ui.theme.SmartHealthMonitorTheme
 
 @Composable
@@ -21,16 +23,36 @@ fun LoginScreen(onLoginSuccess: () -> Unit = {}) {
     var password by remember { mutableStateOf("") }
     var showPassword by remember { mutableStateOf(false) }
     var isLoading by remember { mutableStateOf(false) }
-    var emailError by remember { mutableStateOf("") }
+    
+    var emailError by remember { mutableStateOf<String?>(null) }
+    var passwordError by remember { mutableStateOf<String?>(null) }
+    
+    val scope = rememberCoroutineScope()
 
-    fun validator(): Boolean {
-        emailError = when {
-            email.isBlank() -> "El email no puede estar vacío"
-            !email.contains("@") -> "Email inválido"
-            password.length < 6 -> "Mínimo 6 caracteres"
-            else -> ""
+    fun validate(): Boolean {
+        var isValid = true
+        
+        if (email.isBlank()) {
+            emailError = "El email no puede estar vacío"
+            isValid = false
+        } else if (!email.contains("@")) {
+            emailError = "Email inválido (debe contener '@')"
+            isValid = false
+        } else {
+            emailError = null
         }
-        return emailError.isEmpty()
+
+        if (password.isBlank()) {
+            passwordError = "La contraseña no puede estar vacía"
+            isValid = false
+        } else if (password.length < 4) {
+            passwordError = "Mínimo 4 caracteres"
+            isValid = false
+        } else {
+            passwordError = null
+        }
+        
+        return isValid
     }
 
     SmartHealthMonitorTheme {
@@ -62,23 +84,37 @@ fun LoginScreen(onLoginSuccess: () -> Unit = {}) {
 
                 OutlinedTextField(
                     value = email,
-                    onValueChange = { email = it; emailError = "" },
+                    onValueChange = { 
+                        email = it
+                        if (emailError != null) emailError = null 
+                    },
                     label = { Text("Correo electrónico") },
-                    isError = emailError.isNotEmpty(),
+                    isError = emailError != null,
                     supportingText = {
-                        if (emailError.isNotEmpty())
-                            Text(emailError, color = MaterialTheme.colorScheme.error)
+                        if (emailError != null) {
+                            Text(emailError!!, color = MaterialTheme.colorScheme.error)
+                        }
                     },
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    enabled = !isLoading
                 )
 
                 Spacer(Modifier.height(8.dp))
 
                 OutlinedTextField(
                     value = password,
-                    onValueChange = { password = it },
+                    onValueChange = { 
+                        password = it
+                        if (passwordError != null) passwordError = null
+                    },
                     label = { Text("Contraseña") },
+                    isError = passwordError != null,
+                    supportingText = {
+                        if (passwordError != null) {
+                            Text(passwordError!!, color = MaterialTheme.colorScheme.error)
+                        }
+                    },
                     visualTransformation = if (showPassword) VisualTransformation.None else PasswordVisualTransformation(),
                     trailingIcon = {
                         IconButton(onClick = { showPassword = !showPassword }) {
@@ -88,17 +124,22 @@ fun LoginScreen(onLoginSuccess: () -> Unit = {}) {
                             )
                         }
                     },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    enabled = !isLoading
                 )
 
                 Spacer(Modifier.height(24.dp))
 
                 Button(
                     onClick = {
-                        if (validator()) {
+                        if (validate()) {
                             isLoading = true
-                            // Simular llamada a red
-                            onLoginSuccess()
+                            scope.launch {
+                                // Simular una pequeña espera de autenticación
+                                delay(1000)
+                                isLoading = false
+                                onLoginSuccess()
+                            }
                         }
                     },
                     modifier = Modifier.fillMaxWidth().height(56.dp),
@@ -107,7 +148,8 @@ fun LoginScreen(onLoginSuccess: () -> Unit = {}) {
                     if (isLoading) {
                         CircularProgressIndicator(
                             modifier = Modifier.size(24.dp),
-                            color = MaterialTheme.colorScheme.onPrimary
+                            color = MaterialTheme.colorScheme.onPrimary,
+                            strokeWidth = 2.dp
                         )
                     } else {
                         Text("ENTRAR", style = MaterialTheme.typography.labelLarge)
@@ -116,7 +158,7 @@ fun LoginScreen(onLoginSuccess: () -> Unit = {}) {
 
                 Spacer(Modifier.height(16.dp))
 
-                TextButton(onClick = {}) {
+                TextButton(onClick = {}, enabled = !isLoading) {
                     Text("¿Olvidaste tu contraseña?")
                 }
             }
