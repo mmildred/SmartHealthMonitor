@@ -9,7 +9,7 @@ import java.util.Locale
 
 /**
  * Entidad de Room que representa una lectura de frecuencia cardíaca.
- * Incluye soporte para sincronización offline-first con el servidor remoto.
+ * Optimizada para soporte offline-first y sincronización remota.
  */
 @Entity(tableName = "lecturas_fc")
 data class LecturaFC(

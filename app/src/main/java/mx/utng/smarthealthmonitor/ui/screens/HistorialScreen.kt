@@ -102,7 +102,7 @@ fun FilaHistorial(lectura: LecturaFC) {
                 Text(
                     text = "${lectura.valorBpm} BPM",
                     style = MaterialTheme.typography.titleMedium,
-                    color = if (lectura.esNormal) MaterialTheme.colorScheme.primary 
+                    color = if (lectura.estado == "Normal") MaterialTheme.colorScheme.primary 
                             else MaterialTheme.colorScheme.error
                 )
                 Text(
@@ -110,7 +110,7 @@ fun FilaHistorial(lectura: LecturaFC) {
                     style = MaterialTheme.typography.bodySmall
                 )
             }
-            if (!lectura.esNormal) {
+            if (lectura.estado != "Normal") {
                 Text(
                     text = "¡Anormal!",
                     color = MaterialTheme.colorScheme.error,

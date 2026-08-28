@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.Flow
 
 /**
  * DAO para gestionar las operaciones de la base de datos local de lecturas de FC.
- * Incluye métodos específicos para el motor de sincronización.
+ * Incluye métodos optimizados para el motor de sincronización offline-first.
  */
 @Dao
 interface LecturaFCDao {
@@ -31,13 +31,13 @@ interface LecturaFCDao {
     @Query("SELECT COUNT(*) FROM lecturas_fc WHERE sincronizado = 0")
     fun contarPendientes(): Flow<Int>
 
-    // Métodos heredados para mantenimiento
+    // Métodos adicionales para gestión de datos
+    @Query("SELECT * FROM lecturas_fc ORDER BY timestamp DESC LIMIT 50")
+    fun obtenerUltimas(): Flow<List<LecturaFC>>
+
     @Query("SELECT COUNT(*) FROM lecturas_fc")
     suspend fun contarRegistros(): Int
 
     @Query("DELETE FROM lecturas_fc WHERE timestamp < :limite")
     suspend fun limpiarViejos(limite: Long)
-    
-    @Query("SELECT * FROM lecturas_fc ORDER BY timestamp DESC LIMIT 50")
-    fun obtenerUltimas(): Flow<List<LecturaFC>>
 }
