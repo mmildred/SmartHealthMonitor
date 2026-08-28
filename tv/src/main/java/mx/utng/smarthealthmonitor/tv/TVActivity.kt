@@ -7,16 +7,16 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.tv.material3.ExperimentalTvMaterial3Api
 import androidx.tv.material3.MaterialTheme
 import mx.utng.smarthealthmonitor.data.SmartHealthRepository
-import mx.utng.smarthealthmonitor.tv.presentation.TvDashboardScreen
+import mx.utng.smarthealthmonitor.tv.presentation.TvCatalogScreen
 import mx.utng.smarthealthmonitor.tv.presentation.TvViewModel
 import mx.utng.smarthealthmonitor.tv.presentation.TvViewModelFactory
 
-class MainActivity : ComponentActivity() {
+class TVActivity : ComponentActivity() {
     @OptIn(ExperimentalTvMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Inicializar repositorio ( Singleton)
+        // Inicializar repositorio
         SmartHealthRepository.init(this)
 
         val factory = TvViewModelFactory(SmartHealthRepository)
@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MaterialTheme {
-                TvDashboardScreen(viewModel = viewModel)
+                TvCatalogScreen(viewModel = viewModel)
             }
         }
     }
