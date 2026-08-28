@@ -41,3 +41,33 @@ Aplicación Android de monitoreo de salud personal en tiempo real desarrollada c
 **Mildred Banda**  
 *Ingeniería en Desarrollo y Gestión de Software*  
 **Universidad Tecnológica del Norte de Guanajuato (UTNG)**
+
+---
+
+## Arquitectura — SmartHealth Monitor
+```text
+Sensor PPG (Wear OS)
+│  Health Services API
+▼
+PassiveListenerService (wear)
+│  MessageClient (BLE)
+▼
+WearListenerService (app)
+│  SmartHealthRepository
+▼
+StateFlow (fcActual)  ──────────────────────────────────┐
+│                                                        │
+▼                                                        ▼
+DashboardViewModel (app)              TvViewModel (tv)
+│  collectAsState()                    │  collectAsState()
+▼                                        ▼
+DashboardScreen (Compose)          TvCatalogScreen (Compose TV)
+└── CastButton ──► Chromecast (Remote Playback)
+
+Room DB (LecturaFC)  ◄──  Repository  ──►  Flow<List>
+│
+┌─────────────────────┴──────────┐
+▼                                ▼
+HistorialScreen (app)        TvCatalogScreen (tv)
+```
+
