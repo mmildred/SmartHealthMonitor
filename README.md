@@ -49,6 +49,18 @@ Aplicación Android de monitoreo de salud personal en tiempo real desarrollada c
 | :---: | :---: |
 | ![WatchFace](screenshots/watchface.png) | ![WearDashboard](screenshots/wear_dashboard.png) |
 
+## 📺 Unidad III — Android TV
+
+| Pantalla | Descripción |
+| :--- | :--- |
+| **TvDashboardScreen** | Vista panorámica de monitoreo con carrusel de mediciones reciente y visualización de FC actual en alta visibilidad. |
+| **FcCardItem** | Componente de tarjeta optimizado para navegación con control remoto (D-pad) y estados visuales de foco. |
+
+**Stack TV:** `Compose for TV + Material 3 + D-pad Navigation`
+
+### 📸 Capturas Android TV
+![TvDashboard](screenshots/tv_dashboard.png)
+
 ---
 
 ## 👩‍💻 Autor

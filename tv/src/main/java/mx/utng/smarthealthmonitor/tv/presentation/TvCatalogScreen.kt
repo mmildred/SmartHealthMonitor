@@ -2,9 +2,6 @@ package mx.utng.smarthealthmonitor.tv.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -14,8 +11,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.tv.material3.*
 
+/**
+ * Pantalla de catálogo para TV utilizando componentes de Material 3 for TV.
+ */
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 fun TvCatalogScreen(viewModel: TvViewModel) {
@@ -26,7 +29,7 @@ fun TvCatalogScreen(viewModel: TvViewModel) {
             .fillMaxSize()
             .background(Color(0xFF0D1B4A))
     ) {
-        if (state.isLoading) {
+        if (state.isLoading && state.lecturas.isEmpty()) {
             CircularProgressIndicator(
                 modifier = Modifier.align(Alignment.Center),
                 color = MaterialTheme.colorScheme.primary
@@ -46,7 +49,7 @@ fun TvCatalogScreen(viewModel: TvViewModel) {
                             items(state.lecturas.takeLast(3)) { lectura ->
                                 FcCardItem(
                                     lectura = lectura,
-                                    onClick = { /* Detalle */ }
+                                    onClick = { /* Navegar a detalle */ }
                                 )
                             }
                         }
@@ -62,7 +65,7 @@ fun TvCatalogScreen(viewModel: TvViewModel) {
                             items(state.lecturas) { lectura ->
                                 FcCardItem(
                                     lectura = lectura,
-                                    onClick = { /* Detalle */ }
+                                    onClick = { /* Navegar a detalle */ }
                                 )
                             }
                         }

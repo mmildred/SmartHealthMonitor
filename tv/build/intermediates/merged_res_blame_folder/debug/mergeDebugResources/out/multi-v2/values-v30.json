@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "mx.utng.smarthealthmonitor.tv-mergeDebugResources-52:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/Users/mildredbanda/.gradle/caches/8.10.2/transforms/70bca127ad5ca46c550436844c035ab7/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

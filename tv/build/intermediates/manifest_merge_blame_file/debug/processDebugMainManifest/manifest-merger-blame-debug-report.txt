@@ -1,0 +1,181 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="mx.utng.smarthealthmonitor.tv"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Requerido para apps de TV: El hardware de pantalla táctil no es obligatorio -->
+12    <uses-feature
+12-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:5:5-7:36
+13        android:name="android.hardware.touchscreen"
+13-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:6:9-52
+14        android:required="false" />
+14-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:7:9-33
+15
+16    <!-- Requerido para Leanback (launcher de TV) -->
+17    <uses-feature
+17-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:10:5-12:36
+18        android:name="android.software.leanback"
+18-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:11:9-49
+19        android:required="false" />
+19-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:12:9-33
+20
+21    <permission
+21-->[androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+22        android:name="mx.utng.smarthealthmonitor.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="mx.utng.smarthealthmonitor.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:14:5-36:19
+28        android:allowBackup="true"
+28-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:15:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.16.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/10b5d78dc31cfc09e2ccb27f9461294d/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+30        android:debuggable="true"
+31        android:extractNativeLibs="false"
+32        android:icon="@mipmap/ic_launcher"
+32-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:16:9-43
+33        android:label="@string/app_name"
+33-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:17:9-41
+34        android:supportsRtl="true"
+34-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:18:9-35
+35        android:testOnly="true"
+36        android:theme="@android:style/Theme.Material.NoActionBar" >
+36-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:19:9-66
+37        <activity
+37-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:21:9-35:20
+38            android:name="mx.utng.smarthealthmonitor.tv.TVActivity"
+38-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:22:13-39
+39            android:banner="@drawable/tv_banner"
+39-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:23:13-49
+40            android:exported="true"
+40-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:24:13-36
+41            android:logo="@mipmap/ic_launcher"
+41-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:25:13-47
+42            android:screenOrientation="landscape"
+42-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:26:13-50
+43            android:theme="@android:style/Theme.Material.NoActionBar" >
+43-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:27:13-70
+44
+45            <!-- Intent filters para lanzar desde el menú de aplicaciones estándar y de TV -->
+46            <intent-filter>
+46-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:30:13-34:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:31:17-69
+47-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:31:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:32:17-77
+49-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:32:27-74
+50                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+50-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:33:17-86
+50-->/Users/mildredbanda/Downloads/SmartHealthMonitor/tv/src/main/AndroidManifest.xml:33:27-83
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->[androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+54            android:name="androidx.compose.ui.tooling.PreviewActivity"
+54-->[androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+55            android:exported="true" />
+55-->[androidx.compose.ui:ui-tooling-android:1.10.3] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/606d8fed6cebcfc84d95ae4f11b4f06e/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+59            android:authorities="mx.utng.smarthealthmonitor.tv.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+61            <meta-data
+61-->[androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+63                android:value="androidx.startup" />
+63-->[androidx.emoji2:emoji2:1.4.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/f9ec026679f33157b61e648aec168def/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:30:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.9.4] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/b27b55d8ab37fe484d96eae7df16be46/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+68-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:30:17-85
+69                android:value="androidx.startup" />
+69-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:31:17-49
+70        </provider>
+71
+72        <uses-library
+72-->[androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
+73            android:name="androidx.window.extensions"
+73-->[androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
+74            android:required="false" />
+74-->[androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
+75        <uses-library
+75-->[androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
+76            android:name="androidx.window.sidecar"
+76-->[androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
+77            android:required="false" />
+77-->[androidx.window:window:1.5.0] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/cbd0b1bf9b1f98268a7f8f1d5d9378c0/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
+78
+79        <service
+79-->[androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+80            android:name="androidx.room.MultiInstanceInvalidationService"
+80-->[androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+81            android:directBootAware="true"
+81-->[androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+82            android:exported="false" />
+82-->[androidx.room:room-runtime:2.6.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/3803a78ce5e7a215a4c76c95a14463e0/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+83
+84        <receiver
+84-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:34:9-52:20
+85            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+85-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:35:13-76
+86            android:directBootAware="false"
+86-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:36:13-44
+87            android:enabled="true"
+87-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:37:13-35
+88            android:exported="true"
+88-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:38:13-36
+89            android:permission="android.permission.DUMP" >
+89-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:39:13-57
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:40:13-42:29
+91                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:17-91
+91-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:41:25-88
+92            </intent-filter>
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:43:13-45:29
+94                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:17-85
+94-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:44:25-82
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:46:13-48:29
+97                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:17-88
+97-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:47:25-85
+98            </intent-filter>
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:49:13-51:29
+100                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+100-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:17-95
+100-->[androidx.profileinstaller:profileinstaller:1.4.1] /Users/mildredbanda/.gradle/caches/8.10.2/transforms/8977ba6fa54a3e41cd6416366e3f740d/transformed/profileinstaller-1.4.1/AndroidManifest.xml:50:25-92
+101            </intent-filter>
+102        </receiver>
+103    </application>
+104
+105</manifest>

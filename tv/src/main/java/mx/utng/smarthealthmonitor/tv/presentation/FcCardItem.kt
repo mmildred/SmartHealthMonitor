@@ -8,7 +8,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.tv.material3.*
-import mx.utng.smarthealthmonitor.data.db.LecturaFC
+import mx.utng.smarthealthmonitor.tv.domain.model.LecturaFC
 
 /**
  * Componente de tarjeta individual optimizado para navegación con D-pad en Android TV.
@@ -39,7 +39,7 @@ fun FcCardItem(
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
-                text = "${lectura.valorBpm} bpm",
+                text = "${lectura.bpm} bpm",
                 style = MaterialTheme.typography.headlineMedium,
                 color = Color.White,
                 fontWeight = FontWeight.Bold
@@ -47,12 +47,12 @@ fun FcCardItem(
 
             Column {
                 Text(
-                    text = if (lectura.esNormal) "Normal" else "Anormal",
+                    text = lectura.estado,
                     style = MaterialTheme.typography.bodyMedium,
                     color = Color.White.copy(alpha = 0.8f)
                 )
                 Text(
-                    text = lectura.hora,
+                    text = "ID: ${lectura.id}",
                     style = MaterialTheme.typography.bodySmall,
                     color = Color.White.copy(alpha = 0.6f)
                 )

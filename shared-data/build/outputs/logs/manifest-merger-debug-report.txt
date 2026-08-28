@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5335866024649596770.xml:2:13-83
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5335866024649596770.xml:2:13-83
+	package
+		INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5335866024649596770.xml
+	xmlns:android
+		ADDED from /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5335866024649596770.xml:2:23-81
+uses-sdk
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5335866024649596770.xml reason: use-sdk injection requested
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5335866024649596770.xml
+INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5335866024649596770.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5335866024649596770.xml
+	android:minSdkVersion
+		INJECTED from /Users/mildredbanda/Downloads/SmartHealthMonitor/shared-data/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest5335866024649596770.xml
