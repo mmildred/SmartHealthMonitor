@@ -9,6 +9,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import mx.utng.smarthealthmonitor.data.SmartHealthRepository
+import mx.utng.smarthealthmonitor.tv.data.repository.TvNeonRepository
 import mx.utng.smarthealthmonitor.tv.domain.model.LecturaFC
 import mx.utng.smarthealthmonitor.tv.domain.model.TvUiState
 
@@ -18,26 +19,78 @@ import mx.utng.smarthealthmonitor.tv.domain.model.TvUiState
 enum class FiltroFc { TODOS, NORMAL, ALERTA }
 
 /**
- * ViewModel optimizado para TV con sistema de filtrado dinámico y datos ampliados.
+ * ViewModel optimizado para TV con consulta directa a Neon y estadísticas.
  */
 class TvViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val _state = MutableStateFlow(TvUiState(
-        isLoading = true,
-        fcActual = 76,
-        lecturas = getMockData()
-    ))
+    private val _state = MutableStateFlow(TvUiState(isLoading = true))
     val state: StateFlow<TvUiState> = _state.asStateFlow()
 
     // Estado del filtro seleccionado
     var filtroSeleccionado by mutableStateOf(FiltroFc.TODOS)
         private set
 
-    private val repository = SmartHealthRepository
+    private val localRepository = SmartHealthRepository
+    private val neonRepository = TvNeonRepository()
+
+    // Estadísticas agrupadas por dispositivo
+    private val _estadisticas = MutableStateFlow<List<LecturaFC>>(emptyList())
+    val estadisticas: StateFlow<List<LecturaFC>> = _estadisticas.asStateFlow()
 
     init {
-        repository.init(application)
-        cargarDatos()
+        localRepository.init(application)
+        refresh()
+    }
+
+    /**
+     * Refresca los datos consultando tanto Room local como Neon remoto.
+     */
+    fun refresh() {
+        _state.update { it.copy(isLoading = true) }
+        cargarDatosLocales()
+        cargarDatosRemotos()
+    }
+
+    private fun cargarDatosLocales() {
+        viewModelScope.launch {
+            localRepository.fcFlow.collect { fc ->
+                if (fc > 0) {
+                    _state.update { it.copy(fcActual = fc) }
+                }
+            }
+        }
+    }
+
+    private fun cargarDatosRemotos() {
+        viewModelScope.launch {
+            // 1. Obtener historial completo de la nube
+            val remoto = neonRepository.obtenerHistorialCompleto(100)
+            if (remoto.isNotEmpty()) {
+                val mapped = remoto.map { dto ->
+                    LecturaFC(
+                        id = dto.id,
+                        bpm = dto.bpm,
+                        timestamp = System.currentTimeMillis(), // O parsear created_at
+                        estado = dto.estado
+                    )
+                }
+                _state.update { it.copy(lecturas = mapped, isLoading = false) }
+            } else {
+                // Fallback a Mock si no hay red o está vacío
+                _state.update { it.copy(lecturas = getMockData(), isLoading = false) }
+            }
+
+            // 2. Obtener estadísticas (promedios)
+            val stats = neonRepository.obtenerEstadisticas()
+            _estadisticas.value = stats.map { dto ->
+                LecturaFC(
+                    id = 0,
+                    bpm = dto.bpm,
+                    timestamp = 0,
+                    estado = "${dto.dispositivo}: ${dto.estado}"
+                )
+            }
+        }
     }
 
     /**
@@ -54,42 +107,6 @@ class TvViewModel(application: Application) : AndroidViewModel(application) {
         filtroSeleccionado = nuevoFiltro
     }
 
-    private fun cargarDatos() {
-        viewModelScope.launch {
-            repository.obtenerHistorial()
-                .catch { e ->
-                    _state.update { it.copy(error = e.message, isLoading = false) }
-                }
-                .collect { lecturas ->
-                    val mapped = if (lecturas.isEmpty()) {
-                        getMockData()
-                    } else {
-                        lecturas.map { dbLectura ->
-                            LecturaFC(
-                                id = dbLectura.id,
-                                bpm = dbLectura.valorBpm,
-                                timestamp = dbLectura.timestamp,
-                                estado = if (dbLectura.esNormal) "Normal" else "Irregular"
-                            )
-                        }
-                    }
-                    _state.update { it.copy(lecturas = mapped, isLoading = false) }
-                }
-        }
-
-        viewModelScope.launch {
-            repository.fcFlow.collect { fc ->
-                if (fc > 0) {
-                    _state.update { it.copy(fcActual = fc) }
-                }
-            }
-        }
-    }
-
-    /**
-     * Genera datos de prueba ampliados (12 registros) para facilitar la prueba
-     * de desplazamiento (scrolling) en la interfaz de TV.
-     */
     private fun getMockData(): List<LecturaFC> {
         val now = System.currentTimeMillis()
         val hourMillis = 3600000L
@@ -98,14 +115,7 @@ class TvViewModel(application: Application) : AndroidViewModel(application) {
             LecturaFC(2, 68, now - (hourMillis * 11), "Normal"),
             LecturaFC(3, 115, now - (hourMillis * 10), "Alerta"),
             LecturaFC(4, 78, now - (hourMillis * 9), "Normal"),
-            LecturaFC(5, 125, now - (hourMillis * 8), "Alerta"),
-            LecturaFC(6, 65, now - (hourMillis * 7), "Normal"),
-            LecturaFC(7, 82, now - (hourMillis * 6), "Normal"),
-            LecturaFC(8, 110, now - (hourMillis * 5), "Alerta"),
-            LecturaFC(9, 74, now - (hourMillis * 4), "Normal"),
-            LecturaFC(10, 130, now - (hourMillis * 3), "Alerta"),
-            LecturaFC(11, 69, now - (hourMillis * 2), "Normal"),
-            LecturaFC(12, 76, now - hourMillis, "Normal")
+            LecturaFC(5, 125, now - (hourMillis * 8), "Alerta")
         )
     }
 }
