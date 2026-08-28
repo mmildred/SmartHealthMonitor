@@ -35,6 +35,20 @@ Aplicación Android de monitoreo de salud personal en tiempo real desarrollada c
 | :---: | :---: |
 | ![Historial](screenshots/historial.png) | ![Alerta](screenshots/alerta.png) |
 
+## ⌚ Unidad II — Wear OS
+
+| Pantalla | Descripción |
+| :--- | :--- |
+| **WearDashboardScreen** | Visualización de FC en tiempo real optimizada para pantallas circulares con `ScalingLazyColumn` y `TimeText`. |
+| **WearHistorialScreen** | Listado de mediciones con soporte para **Rotary Input**, permitiendo el desplazamiento mediante la corona física del reloj. |
+| **WearAlertaScreen** | Interfaz de confirmación de emergencia con botones circulares de alto contraste. |
+| **SmartHealth WatchFace** | Carátula nativa digital que muestra la hora y la frecuencia cardíaca actual directamente en la esfera. |
+
+### 📸 Capturas Wear OS
+| WatchFace | Wear Dashboard |
+| :---: | :---: |
+| ![WatchFace](screenshots/watchface.png) | ![WearDashboard](screenshots/wear_dashboard.png) |
+
 ---
 
 ## 👩‍💻 Autor
