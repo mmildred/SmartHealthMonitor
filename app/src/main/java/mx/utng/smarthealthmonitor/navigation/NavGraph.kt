@@ -4,6 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import mx.utng.smarthealthmonitor.LoginScreen
+import mx.utng.smarthealthmonitor.ui.screens.DashboardScreen
 import mx.utng.smarthealthmonitor.ui.screens.HistorialScreen
 
 @Composable
@@ -13,10 +15,20 @@ fun NavGraph(navController: NavHostController) {
         startDestination = Screen.Login.route
     ) {
         composable(Screen.Login.route) {
-            // Aquí iría el LoginScreen que ya existe en el proyecto
+            LoginScreen(
+                onLoginSuccess = {
+                    navController.navigate(Screen.Dashboard.route) {
+                        popUpTo(Screen.Login.route) { inclusive = true }
+                    }
+                }
+            )
         }
         composable(Screen.Dashboard.route) {
-            // Aquí iría el DashboardScreen
+            DashboardScreen(
+                onNavigateToHistorial = {
+                    navController.navigate(Screen.Historial.route)
+                }
+            )
         }
         composable(Screen.Historial.route) {
             HistorialScreen(
